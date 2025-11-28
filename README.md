@@ -1,84 +1,91 @@
-# 📊 Impact of Demographic Growth on Economic Growth in France (1960–2023)
+# 📊 Impact de la croissance démographique sur la croissance économique en France (1960–2023)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/username/repo?style=flat-square&color=blue)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
-![Made with](https://img.shields.io/badge/Made%20with-Python%20%26%20Excel-orange?style=flat-square)
-![License](https://img.shields.io/badge/License-Academic-blueviolet?style=flat-square)
+![Status](https://img.shields.io/badge/Statut-Terminé-brightgreen?style=flat-square)
+![Made with](https://img.shields.io/badge/Réalisé%20avec-Python%20%26%20Excel-orange?style=flat-square)
+![License](https://img.shields.io/badge/License-Académique-blueviolet?style=flat-square)
 
 ---
 
-## 📑 Table of Contents
-- [🎯 Objective](#-objective)
-- [📂 Data Sources](#-data-sources)
-- [🛠️ Methodology](#️-methodology)
-- [📈 Key Findings](#-key-findings)
+## 📑 Table des matières
+- [🎯 Objectif](#-objectif)
+- [📂 Sources de données](#-sources-de-données)
+- [🛠️ Méthodologie](#️-méthodologie)
+- [📈 Résultats clés](#-résultats-clés)
 - [✅ Conclusion](#-conclusion)
-- [📚 References](#-references)
+- [📚 Références](#-références)
 
 ---
 
-## 🎯 Objective
-Assess whether **demographic growth fosters economic growth in France**, and identify the **main determinants of GDP per capita** over 1960–2023.
+## 🎯 Objectif
+
+Évaluer si la **croissance démographique favorise la croissance économique en France** et identifier les **principaux déterminants du PIB par habitant** sur la période 1960–2023.
 
 ---
 
-## 📂 Data Sources
-- **Excel Database**: `data_base.xlsx`  
-- **Python Notebook**: `Projet_THE_Ange & Roumbo_Philippe.ipynb`  
-- **Full Report**: `Rapport_Projet_THE.pdf`  
-- **Official Data**: INSEE, World Bank, OECD, Eurostat, UNDP  
+## 📂 Sources de données
+
+- **Base Excel** : `data_base.xlsx`  
+- **Notebook Python** : `Projet_THE_Ange & Roumbo_Philippe.ipynb`  
+- **Rapport complet** : `Rapport_Projet_THE.pdf`  
+- **Données officielles** : INSEE, Banque mondiale, OCDE, Eurostat, PNUD  
 
 ---
 
-## 🛠️ Methodology
-1. **Exploratory Data Analysis (EDA)**  
-   - Descriptive statistics of GDP/capita, inflation, savings, trade balance.  
-   - Historical context: oil shocks, subprime crisis, Covid-19.  
-   - Key correlations (e.g., GDP/FBCF = 82%).  
+## 🛠️ Méthodologie
 
-2. **Linear Regression Model**  
-   - Adjusted R² = 81%  
-   - Normally distributed residuals, multicollinearity issues detected.  
-   - Significant variables:  
-     - FBCF (+), Savings (+)  
-     - Demographic growth (–), Employment (–), Taxes (–).  
+1. **Analyse exploratoire des données (EDA)**  
+   - Statistiques descriptives du PIB/habitant, de l’inflation, de l’épargne, du solde commercial.  
+   - Mise en contexte historique : chocs pétroliers, crise des subprimes, Covid-19.  
+   - Corrélations clés (par exemple, PIB/FBCF = 82 %).  
 
-3. **Time Series Modeling (SARIMAX)**  
-   - Final model: **SARIMAX(1,0,3)** with FBCF & savings as exogenous variables.  
-   - Better shock management than linear regression.  
-   - Performance: R² ≈ 81% (train), 54% (test).  
+2. **Modèle de régression linéaire**  
+   - R² ajusté = 81 %  
+   - Résidus approximativement normaux, présence de multicolinéarité.  
+   - Variables significatives :  
+     - FBCF (+), Épargne (+)  
+     - Croissance démographique (–), Emploi (–), Impôts (–).  
+
+3. **Modélisation en séries temporelles (SARIMAX)**  
+   - Modèle final : **SARIMAX(1,0,3)** avec FBCF et épargne en variables exogènes.  
+   - Meilleure gestion des chocs que la régression linéaire.  
+   - Performance : R² ≈ 81 % (train), 54 % (test).  
 
 ---
 
-## 📈 Key Findings
-- 📉 **Demographic growth**: negative or non-significant effect on GDP per capita.  
-- 📊 **FBCF (investment)**: main driver of growth.  
-- 💰 **Savings**: positive but moderate effect.  
-- ⚖️ **Taxes & employment**: negative effects, suggesting structural rigidities.  
-- 🔄 **Economic shocks**: strong impact, partly absorbed in SARIMAX dynamics.  
+## 📈 Résultats clés
+
+- 📉 **Croissance démographique** : effet négatif ou non significatif sur le PIB par habitant.  
+- 📊 **FBCF (investissement)** : principal moteur de la croissance.  
+- 💰 **Épargne** : effet positif mais modéré.  
+- ⚖️ **Impôts & emploi** : effets négatifs, suggérant des rigidités structurelles.  
+- 🔄 **Chocs économiques** : impact important, partiellement absorbé par la dynamique SARIMAX.  
 
 ---
 
 ## ✅ Conclusion
-Demographic growth **is not a key determinant of economic growth in France**.  
-Instead, **investment, savings, and innovation** are the main long-term growth drivers.  
-Public policies should therefore focus on:  
-- 🚀 Boosting productive investment,  
-- 📈 Fostering innovation and competitiveness,  
-- 🌍 Efficient integration of migration inflows.  
+
+La croissance démographique **n’apparaît pas comme un déterminant central de la croissance économique en France**.  
+Ce sont plutôt **l’investissement, l’épargne et l’innovation** qui constituent les principaux moteurs de la croissance à long terme.
+
+Les politiques publiques devraient donc prioriser :  
+- 🚀 Le soutien à l’investissement productif,  
+- 📈 La promotion de l’innovation et de la compétitivité,  
+- 🌍 Une intégration efficace des flux migratoires.  
 
 ---
 
-## 📚 References
+## 📚 Références
+
 - [INSEE](https://www.insee.fr)  
-- [World Bank](https://data.worldbank.org)  
-- [OECD](https://data.oecd.org)  
-- [UNDP](https://hdr.undp.org)  
+- [Banque mondiale](https://data.worldbank.org)  
+- [OCDE](https://data.oecd.org)  
+- [PNUD](https://hdr.undp.org)  
 - [Eurostat](https://ec.europa.eu/eurostat)  
 
 ---
 
-👤 **Authors**:  
+👤 **Auteurs** :  
 - Philippe Roumbo *(M1 BIDABI)*  
 - Ange-Paul Emmanuel THE *(M1 BIDABI)*  
 Université Sorbonne Paris Nord — 2024/2025
